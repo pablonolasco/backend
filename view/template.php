@@ -102,18 +102,15 @@ if(isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"]
     if(isset($_GET["ruta"])){
 
        if($ruta == "inicio" ||
-           $ruta == "comercio" ||
-           $ruta == "slide" ||
+           $ruta == "reporte" ||
            $ruta == "categorias" ||
            $ruta == "subcategorias" ||
            $ruta == "productos" ||
-           $ruta == "banner" ||
            $ruta == "ventas" ||
-           $ruta == "visitas" ||
            $ruta == "usuarios" ||
            $ruta == "mensajes" ||
+           $ruta == "perfil-usuario" ||
            $ruta == "perfiles" ||
-           $ruta == "perfil" ||
            $ruta == "salir"){
 
 

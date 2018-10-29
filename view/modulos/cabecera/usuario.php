@@ -8,7 +8,7 @@ USUARIOS
     <!-- dropdown-toggle -->
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
-        <img src="../view/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+        <img src="view/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
 
         <span class="hidden-xs">Tienda virtual</span>
 
@@ -20,7 +20,7 @@ USUARIOS
 
         <li class="user-header">
 
-            <img src="../view/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <img src="view/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
             <p>
                 Tienda virtual
@@ -32,7 +32,7 @@ USUARIOS
 
             <div class="pull-left">
 
-                <a href="perfil" class="btn btn-default btn-flat">Perfil</a>
+                <a href="perfil-usuario" class="btn btn-default btn-flat">Perfil</a>
 
             </div>
 

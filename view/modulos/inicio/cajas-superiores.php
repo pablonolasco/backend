@@ -127,7 +127,6 @@ CAJAS SUPERIORES
 
         </div>
         <!-- icon -->
-
         <a href="#" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
 
     </div>

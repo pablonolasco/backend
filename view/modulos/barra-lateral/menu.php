@@ -6,7 +6,7 @@ MENU
 
     <li class="active"><a href="inicio"><i class="fa fa-home"></i> <span>Inicio</span></a></li>
 
-    <li><a href="comercio"><i class="fa fa-files-o"></i> <span>Gestor Reporte</span></a></li>
+    <li><a href="reporte"><i class="fa fa-files-o"></i> <span>Gestor Reporte</span></a></li>
 
     <li class="treeview">
 

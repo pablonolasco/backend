@@ -5,11 +5,11 @@
     <a href="#" class="logo">
 
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><img src="../view/img/plantilla/logoE.png" alt="Logo" class="img-responsive"
+        <span class="logo-mini"><img src="view/img/plantilla/logoE.png" alt="Logo" class="img-responsive"
                                      style="padding:10px;
         filter:contrast(200%);"></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><img src="../view/img/plantilla/logoE.png" alt="Logo" class="img-responsive"
+        <span class="logo-lg"><img src="view/img/plantilla/logoE.png" alt="Logo" class="img-responsive"
                                    style="padding:10px 30px;
         filter:contrast(200%);"></span>
 

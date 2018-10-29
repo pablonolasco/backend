@@ -1,6 +1,6 @@
 <div class="login-box">
     <div class="login-logo">
-       <img src="../img/plantilla/logoE.png" alt="Logo" class="img-responsive" style="margin: 0 auto;"/>
+       <img src="view/img/plantilla/logoE.png" alt="Logo" class="img-responsive" style="margin: 0 auto;"/>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
