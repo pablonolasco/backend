@@ -7,7 +7,7 @@
  * Date: 15/10/2018
  * Time: 12:44 PM
  */
-include 'Conexion.php';
+require_once 'Conexion.php';
 class AdministradorModel
 {
     /*

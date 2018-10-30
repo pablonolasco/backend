@@ -1,12 +1,16 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Win10
- * Date: 29/10/2018
- * Time: 02:36 PM
- */
 class UsuarioController
 {
+    public function get_total_usuarios()
+    {
+        try{
+            $response=UsuarioModel::obtener_total_usuarios();
+        }catch (Exception $e){
+            return $e->getMessage();
+            exit;
+        }
+        return $response;
 
+    }
 }

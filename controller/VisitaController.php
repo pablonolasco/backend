@@ -1,17 +1,17 @@
 <?php
 
-class VentaController
+class VisitaController
 {
-    public static function get_total_ventas()
+    public function get_total_visitas()
     {
         try{
-            $response=VentaModel::obtner_total_ventas();
+            $response=VisitaModel::obtener_visitas();
         }catch (Exception $e){
             return $e->getMessage();
             exit;
         }
-
         return $response;
 
     }
+
 }

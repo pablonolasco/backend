@@ -1,12 +1,16 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Win10
- * Date: 29/10/2018
- * Time: 02:35 PM
- */
 class ProductoController
 {
+    public function get_total_productos()
+    {
+        try{
+            $response=ProductoModel::obtener_total_productos();
+        }catch (Exception $e){
+            return $e->getMessage();
+        }
+        return $response;
+
+    }
 
 }

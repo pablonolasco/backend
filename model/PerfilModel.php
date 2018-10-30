@@ -6,7 +6,7 @@
  * Date: 29/10/2018
  * Time: 02:34 PM
  */
-class PerfilController
+class PerfilModel
 {
 
 }

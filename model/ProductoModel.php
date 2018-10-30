@@ -1,12 +1,22 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Win10
- * Date: 29/10/2018
- * Time: 02:35 PM
- */
-class ProductoController
+class ProductoModel
 {
+    /*
+     * TODO Metodo que obtiene el total de productos, registrados en la plataforma
+     */
+    public static function obtener_total_productos()
+    {
+        try{
+            $stmt=Conexion::conectar()->prepare("select * from productos where productos.`status`=1 order by productos.id desc;");
+            $stmt->execute();
+            return $stmt->fetchAll();
+            $stmt->close();
+            $stmt=null;
+        }catch (Exception $e){
+            return $e->getMessage();
+        }
+
+    }
 
 }

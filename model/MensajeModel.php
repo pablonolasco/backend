@@ -6,7 +6,7 @@
  * Date: 29/10/2018
  * Time: 02:32 PM
  */
-class MensajeController
+class MensajeModel
 {
 
 }
