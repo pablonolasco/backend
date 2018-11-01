@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="393bfc25-f145-448a-9d68-88f211794252" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/VisitaController.php" afterPath="$PROJECT_DIR$/controller/VisitaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/VisitaModel.php" afterPath="$PROJECT_DIR$/model/VisitaModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php" afterPath="$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,15 +18,15 @@
         <entry file="file://$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
-              <caret line="106" column="66" lean-forward="true" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
+              <caret line="106" column="66" lean-forward="false" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
               <folding>
-                <marker date="1541034334220" expanded="true" signature="1177:1208" ph="..." />
-                <marker date="1541034334220" expanded="true" signature="1209:1287" ph="..." />
-                <marker date="1541034334220" expanded="true" signature="1209:1288" ph="..." />
-                <marker date="1541034334220" expanded="true" signature="1209:1457" ph="..." />
-                <marker date="1541034334220" expanded="true" signature="1209:1464" ph="..." />
-                <marker date="1541034334220" expanded="true" signature="1209:1505" ph="..." />
-                <marker date="1541034334220" expanded="true" signature="1766:1801" ph="{...}" />
+                <marker date="1541034738132" expanded="true" signature="1177:1208" ph="..." />
+                <marker date="1541034738132" expanded="true" signature="1209:1287" ph="..." />
+                <marker date="1541034738132" expanded="true" signature="1209:1288" ph="..." />
+                <marker date="1541034738132" expanded="true" signature="1209:1457" ph="..." />
+                <marker date="1541034738132" expanded="true" signature="1209:1464" ph="..." />
+                <marker date="1541034738132" expanded="true" signature="1209:1505" ph="..." />
+                <marker date="1541034738132" expanded="true" signature="1766:1801" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -63,8 +61,8 @@
               <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="48" />
               <folding>
                 <element signature="e#6#120#0#PHP" expanded="true" />
-                <marker date="1541030395007" expanded="true" signature="373:487" ph="select sum(c... visitaspaises" />
-                <marker date="1541030395007" expanded="true" signature="902:952" ph="select * fro... visitaspaises" />
+                <marker date="1541034546102" expanded="true" signature="373:487" ph="select sum(c... visitaspaises" />
+                <marker date="1541034546102" expanded="true" signature="902:952" ph="select * fro... visitaspaises" />
               </folding>
             </state>
           </provider>
@@ -337,16 +335,15 @@
       <workItem from="1531420528271" duration="517000" />
       <workItem from="1540226122319" duration="2696000" />
       <workItem from="1540738358585" duration="41734000" />
-      <workItem from="1540920289342" duration="26422000" />
+      <workItem from="1540920289342" duration="26895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71369000" />
+    <option name="totallyTimeSpent" value="71842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2503671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -792,8 +789,8 @@
           <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="48" />
           <folding>
             <element signature="e#6#120#0#PHP" expanded="true" />
-            <marker date="1541030395007" expanded="true" signature="373:487" ph="select sum(c... visitaspaises" />
-            <marker date="1541030395007" expanded="true" signature="902:952" ph="select * fro... visitaspaises" />
+            <marker date="1541034546102" expanded="true" signature="373:487" ph="select sum(c... visitaspaises" />
+            <marker date="1541034546102" expanded="true" signature="902:952" ph="select * fro... visitaspaises" />
           </folding>
         </state>
       </provider>
@@ -801,15 +798,15 @@
     <entry file="file://$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
-          <caret line="106" column="66" lean-forward="true" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
+          <caret line="106" column="66" lean-forward="false" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
           <folding>
-            <marker date="1541034334220" expanded="true" signature="1177:1208" ph="..." />
-            <marker date="1541034334220" expanded="true" signature="1209:1287" ph="..." />
-            <marker date="1541034334220" expanded="true" signature="1209:1288" ph="..." />
-            <marker date="1541034334220" expanded="true" signature="1209:1457" ph="..." />
-            <marker date="1541034334220" expanded="true" signature="1209:1464" ph="..." />
-            <marker date="1541034334220" expanded="true" signature="1209:1505" ph="..." />
-            <marker date="1541034334220" expanded="true" signature="1766:1801" ph="{...}" />
+            <marker date="1541034738132" expanded="true" signature="1177:1208" ph="..." />
+            <marker date="1541034738132" expanded="true" signature="1209:1287" ph="..." />
+            <marker date="1541034738132" expanded="true" signature="1209:1288" ph="..." />
+            <marker date="1541034738132" expanded="true" signature="1209:1457" ph="..." />
+            <marker date="1541034738132" expanded="true" signature="1209:1464" ph="..." />
+            <marker date="1541034738132" expanded="true" signature="1209:1505" ph="..." />
+            <marker date="1541034738132" expanded="true" signature="1766:1801" ph="{...}" />
           </folding>
         </state>
       </provider>

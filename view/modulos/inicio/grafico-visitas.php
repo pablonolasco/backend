@@ -104,7 +104,7 @@ GRÁFICO DE VISITAS
         },
         onRegionLabelShow: function (e, el, code) {
             if (typeof visitorsData[code] != 'undefined')
-                el.html(el.html() + ': ' + visitorsData[code] + 'visitas');
+                el.html(el.html() + ': ' + visitorsData[code] + ' visitas');
         }
     });
 
