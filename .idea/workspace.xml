@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="393bfc25-f145-448a-9d68-88f211794252" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/VentaController.php" afterPath="$PROJECT_DIR$/controller/VentaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/VentaModel.php" afterPath="$PROJECT_DIR$/model/VentaModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/bower_components/morris.js/morris.css" afterPath="$PROJECT_DIR$/view/bower_components/morris.js/morris.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/modulos/inicio/grafico-ventas.php" afterPath="$PROJECT_DIR$/view/modulos/inicio/grafico-ventas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/VisitaController.php" afterPath="$PROJECT_DIR$/controller/VisitaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/VisitaModel.php" afterPath="$PROJECT_DIR$/model/VisitaModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php" afterPath="$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,36 +16,55 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="grafico-ventas.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/modulos/inicio/grafico-ventas.php">
+      <file leaf-file-name="grafico-visitas.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="382">
+              <caret line="106" column="66" lean-forward="true" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
               <folding>
-                <marker date="1541026051890" expanded="true" signature="3645:3673" ph="{...}" />
+                <marker date="1541034334220" expanded="true" signature="1177:1208" ph="..." />
+                <marker date="1541034334220" expanded="true" signature="1209:1287" ph="..." />
+                <marker date="1541034334220" expanded="true" signature="1209:1288" ph="..." />
+                <marker date="1541034334220" expanded="true" signature="1209:1457" ph="..." />
+                <marker date="1541034334220" expanded="true" signature="1209:1464" ph="..." />
+                <marker date="1541034334220" expanded="true" signature="1209:1505" ph="..." />
+                <marker date="1541034334220" expanded="true" signature="1766:1801" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VentaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/VentaController.php">
+      <file leaf-file-name="grafico-ventas.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/modulos/inicio/grafico-ventas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="486">
+              <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+              <folding>
+                <marker date="1541026740649" expanded="true" signature="3645:3673" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VisitaController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/VisitaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VentaModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/VentaModel.php">
+      <file leaf-file-name="VisitaModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/VisitaModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+            <state relative-caret-position="283">
+              <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="48" />
               <folding>
-                <marker date="1541010672597" expanded="true" signature="361:446" ph="select sum(p... compras" />
-                <marker date="1541010672597" expanded="true" signature="942:1004" ph="select sum(p... compras" />
+                <element signature="e#6#120#0#PHP" expanded="true" />
+                <marker date="1541030395007" expanded="true" signature="373:487" ph="select sum(c... visitaspaises" />
+                <marker date="1541030395007" expanded="true" signature="902:952" ph="select * fro... visitaspaises" />
               </folding>
             </state>
           </provider>
@@ -68,7 +85,6 @@
       <list>
         <option value="$PROJECT_DIR$/controller/AdministradorController.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio/productos-mas-vendidos.php" />
-        <option value="$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio/productos-recientes.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio/ultimos-usuarios.php" />
@@ -95,8 +111,6 @@
         <option value="$PROJECT_DIR$/model/SubcategoriaModel.php" />
         <option value="$PROJECT_DIR$/model/AdministradorModel.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/controller/VisitaController.php" />
-        <option value="$PROJECT_DIR$/model/VisitaModel.php" />
         <option value="$PROJECT_DIR$/controller/UsuarioController.php" />
         <option value="$PROJECT_DIR$/model/UsuarioModel.php" />
         <option value="$PROJECT_DIR$/controller/ProductoController.php" />
@@ -106,6 +120,9 @@
         <option value="$PROJECT_DIR$/controller/VentaController.php" />
         <option value="$PROJECT_DIR$/model/VentaModel.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio/grafico-ventas.php" />
+        <option value="$PROJECT_DIR$/model/VisitaModel.php" />
+        <option value="$PROJECT_DIR$/controller/VisitaController.php" />
+        <option value="$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php" />
       </list>
     </option>
   </component>
@@ -180,6 +197,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modulos" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modulos" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inicio" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,12 +337,12 @@
       <workItem from="1531420528271" duration="517000" />
       <workItem from="1540226122319" duration="2696000" />
       <workItem from="1540738358585" duration="41734000" />
-      <workItem from="1540920289342" duration="19526000" />
+      <workItem from="1540920289342" duration="26422000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64473000" />
+    <option name="totallyTimeSpent" value="71369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
@@ -402,14 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="126" column="9" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -658,21 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/VisitaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/VisitaModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/ProductoModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -717,33 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/modulos/inicio/cajas-superiores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/VentaModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-          <folding>
-            <marker date="1541010672597" expanded="true" signature="361:446" ph="select sum(p... compras" />
-            <marker date="1541010672597" expanded="true" signature="942:1004" ph="select sum(p... compras" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/VentaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -752,12 +741,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/VentaModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1541026740636" expanded="true" signature="361:446" ph="select sum(p... compras" />
+            <marker date="1541026740636" expanded="true" signature="942:1004" ph="select sum(p... compras" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/modulos/inicio/cajas-superiores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/VentaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/modulos/inicio/grafico-ventas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
           <folding>
-            <marker date="1541026051890" expanded="true" signature="3645:3673" ph="{...}" />
+            <marker date="1541026740649" expanded="true" signature="3645:3673" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/VisitaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/VisitaModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#6#120#0#PHP" expanded="true" />
+            <marker date="1541030395007" expanded="true" signature="373:487" ph="select sum(c... visitaspaises" />
+            <marker date="1541030395007" expanded="true" signature="902:952" ph="select * fro... visitaspaises" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="106" column="66" lean-forward="true" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
+          <folding>
+            <marker date="1541034334220" expanded="true" signature="1177:1208" ph="..." />
+            <marker date="1541034334220" expanded="true" signature="1209:1287" ph="..." />
+            <marker date="1541034334220" expanded="true" signature="1209:1288" ph="..." />
+            <marker date="1541034334220" expanded="true" signature="1209:1457" ph="..." />
+            <marker date="1541034334220" expanded="true" signature="1209:1464" ph="..." />
+            <marker date="1541034334220" expanded="true" signature="1209:1505" ph="..." />
+            <marker date="1541034334220" expanded="true" signature="1766:1801" ph="{...}" />
           </folding>
         </state>
       </provider>
