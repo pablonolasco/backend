@@ -1,3 +1,12 @@
+<?php
+//obtiene todos los productos
+$productos=ProductoController::get_productos();
+//obtiene la suma de todos los productos
+$total_productos=ProductoController::get_sum_total_productos();
+//Arreglo de colores
+$colores=array("red","green","yellow","aqua","purple");
+
+?>
 <!--=====================================
 PRODUCTOS MÁS VENDIDOS
 ======================================-->
@@ -42,12 +51,14 @@ PRODUCTOS MÁS VENDIDOS
             <div class="col-md-4">
 
                 <ul class="chart-legend clearfix">
-
-                    <li><i class="fa fa-circle-o text-red"></i> Samsung TV</li>
-                    <li><i class="fa fa-circle-o text-green"></i> Bicycle</li>
-                    <li><i class="fa fa-circle-o text-yellow"></i> Xbox One</li>
-                    <li><i class="fa fa-circle-o text-aqua"></i> PlayStation 4</li>
-
+                    <?php
+                    for ($i=0; $i<5; $i++){
+                        ?>
+                        <li><i class="fa fa-circle-o text-<?php echo $colores[$i];?>"></i><?php echo $productos[$i]['titulo']; ?>
+                        </li>
+                        <?php
+                    }
+                    ?>
                 </ul>
 
             </div>
@@ -64,26 +75,23 @@ PRODUCTOS MÁS VENDIDOS
 
         <!-- nav-pills -->
         <ul class="nav nav-pills nav-stacked">
+            <?php
+            //Ciclo para imprimir los productos mas vendidos
+            for ($i=0; $i<5; $i++) {
 
-            <li>
-                <a href="#">Samsung TV
-                    <span class="pull-right text-red"> 12%</span></a>
-            </li>
-
-            <li>
-                <a href="#">Bicycle <span class="pull-right text-green"> 4%</span></a>
-            </li>
-
-            <li>
-                <a href="#">Xbox One
-                    <span class="pull-right text-yellow"> 0%</span></a>
-            </li>
-
-            <li>
-                <a href="#">PlayStation 4
-                    <span class="pull-right text-yellow"> 0%</span></a>
-            </li>
-
+                ?>
+                <li>
+                    <a href="#"><?php echo $productos[$i]['titulo']?>
+                        <span class="pull-right text-<?php echo $colores[$i];?>">
+                      <?php
+                        //Imprime el porcentaje de los 5 productos mas vendidos
+                      echo ceil( $productos[$i]['ventas']*100/$total_productos['total_ventas']);
+                      ?>%
+                        </span></a>
+                </li>
+                <?php
+            }
+            ?>
         </ul>
         <!-- nav-pills -->
 
@@ -101,42 +109,24 @@ PRODUCTOS MÁS VENDIDOS
     // Get context with jQuery - using jQuery's .get() method.
     var pieChartCanvas = $('#pieChart').get(0).getContext('2d');
     var pieChart       = new Chart(pieChartCanvas);
+
     var PieData        = [
+        <?php
+       for ($i=0; $i<4; $i++) {
+        // Ciclo para imprimir la grafica de dona
+        ?>
         {
-            value    : 700,
-            color    : '#f56954',
-            highlight: '#f56954',
-            label    : 'Chrome'
+            value    : <?php echo $productos[$i]['ventas'];?>,
+            color    : '<?php echo $colores[$i];?>',
+            highlight: '<?php echo $colores[$i];?>',
+            label    : '<?php echo $productos[$i]['titulo'];?>'
         },
+       <?php  }?>
         {
-            value    : 500,
-            color    : '#00a65a',
-            highlight: '#00a65a',
-            label    : 'IE'
-        },
-        {
-            value    : 400,
-            color    : '#f39c12',
-            highlight: '#f39c12',
-            label    : 'FireFox'
-        },
-        {
-            value    : 600,
-            color    : '#00c0ef',
-            highlight: '#00c0ef',
-            label    : 'Safari'
-        },
-        {
-            value    : 300,
-            color    : '#3c8dbc',
-            highlight: '#3c8dbc',
-            label    : 'Opera'
-        },
-        {
-            value    : 100,
-            color    : '#d2d6de',
-            highlight: '#d2d6de',
-            label    : 'Navigator'
+            value    : <?php echo $productos[$i]['ventas'];?>,
+            color    : '<?php echo $colores[$i];?>',
+            highlight: '<?php echo $colores[$i];?>',
+            label    : '<?php echo $productos[$i]['titulo'];?>'
         }
     ];
     var pieOptions     = {
@@ -163,7 +153,7 @@ PRODUCTOS MÁS VENDIDOS
         // String - A legend template
         legendTemplate       : '<ul class=\'<%=name.toLowerCase()%>-legend\'><% for (var i=0; i<segments.length; i++){%><li><span style=\'background-color:<%=segments[i].fillColor%>\'></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>',
         // String - A tooltip template
-        tooltipTemplate      : '<%=value %> <%=label%> users'
+        tooltipTemplate      : '<%=value %> <%=label%> vendidos'
     };
     // Create pie or douhnut chart
     // You can switch between pie and douhnut using the method below.
