@@ -21,6 +21,7 @@ require_once "model/UsuarioModel.php";
 require_once "model/ReporteModel.php";
 require_once "model/PerfilModel.php";
 require_once "model/VisitaModel.php";
+require_once "model/RutaModel.php";
 
 $plantilla=new ControllerTemplate();
 $plantilla->plantilla();

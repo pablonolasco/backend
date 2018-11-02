@@ -1,3 +1,9 @@
+<?php
+$usuarios=UsuarioController::get_usuarios();
+//url frontend
+$url=RutaModel::obtenerRuta();
+
+?>
 <!--=====================================
 ÚLTIMOS USUARIOS
 ======================================-->
@@ -25,54 +31,51 @@
 
         <!-- users-list -->
         <ul class="users-list clearfix">
+            <?php
+            $total_registros=count($usuarios);
+            //Si es falso, negamos el valor
+            if(!$total_registros>8){
+               $total_registros=8;
 
-            <li>
-                <img src="view/dist/img/user1-128x128.jpg" alt="User Image">
-                <a class="users-list-name" href="#">Alexander Pierce</a>
-                <span class="users-list-date">Today</span>
-            </li>
+            }
+                for($i=0; $i<$total_registros; $i++) {
+                //verifica si la foto no viene vacia
+                if($usuarios[$i]['foto'] !="") {
 
-            <li>
-                <img src="view/dist/img/user8-128x128.jpg" alt="User Image">
-                <a class="users-list-name" href="#">Norman</a>
-                <span class="users-list-date">Yesterday</span>
-            </li>
+                    //directo = desdes la pagina
+                    //diferente= redes sociales
+                    //si el modo es diferente de directo
+                    if ($usuarios[$i]['modo'] != 'directo') {
+                        ?>
+                        <li>
+                            <img src="<?php echo $usuarios[$i]['foto']; ?>" style="width: 70%;" alt="User Image">
+                            <a class="users-list-name" href="#"><?php echo $usuarios[$i]['nombre']; ?></a>
+                            <span class="users-list-date"><?php echo $usuarios[$i]['fecha'];?></span>
+                        </li>
+                        <?php
+                    } else {
+                        ?>
 
-            <li>
-                <img src="view/dist/img/user7-128x128.jpg" alt="User Image">
-                <a class="users-list-name" href="#">Jane</a>
-                <span class="users-list-date">12 Jan</span>
-            </li>
+                        <li>
+                            <img src="<?php echo $url . $usuarios[$i]['foto']; ?>" style="width: 70%;" alt="User Image">
+                            <a class="users-list-name" href="#"><?php echo $usuarios[$i]['nombre']; ?></a>
+                            <span class="users-list-date"><?php echo $usuarios[$i]['fecha'];?></span>
+                        </li>
+                        <?php
+                    }
+                }else{
+                    //muestra imagen por defecto
+                    ?>
+                    <li>
+                        <img src="view/img/usuarios/default/anonymous.png" style="width: 70%;" alt="User Image">
+                        <a class="users-list-name" href="#"><?php echo $usuarios[$i]['nombre']; ?></a>
+                        <span class="users-list-date"><?php echo $usuarios[$i]['fecha'];?></span>
+                    </li>
+                    <?php
+                }
+            }
+            ?>
 
-            <li>
-                <img src="view/dist/img/user6-128x128.jpg" alt="User Image">
-                <a class="users-list-name" href="#">John</a>
-                <span class="users-list-date">12 Jan</span>
-            </li>
-
-            <li>
-                <img src="view/dist/img/user2-160x160.jpg" alt="User Image">
-                <a class="users-list-name" href="#">Alexander</a>
-                <span class="users-list-date">13 Jan</span>
-            </li>
-
-            <li>
-                <img src="view/dist/img/user5-128x128.jpg" alt="User Image">
-                <a class="users-list-name" href="#">Sarah</a>
-                <span class="users-list-date">14 Jan</span>
-            </li>
-
-            <li>
-                <img src="view/dist/img/user4-128x128.jpg" alt="User Image">
-                <a class="users-list-name" href="#">Nora</a>
-                <span class="users-list-date">15 Jan</span>
-            </li>
-
-            <li>
-                <img src="view/dist/img/user3-128x128.jpg" alt="User Image">
-                <a class="users-list-name" href="#">Nadia</a>
-                <span class="users-list-date">15 Jan</span>
-            </li>
 
         </ul>
         <!-- /.users-list -->
