@@ -292,12 +292,12 @@
       <workItem from="1540920289342" duration="26895000" />
       <workItem from="1541096987493" duration="2695000" />
       <workItem from="1541100336662" duration="2123000" />
-      <workItem from="1541123598594" duration="7132000" />
+      <workItem from="1541123598594" duration="7218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83792000" />
+    <option name="totallyTimeSpent" value="83878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="1" />
@@ -719,9 +719,9 @@
           <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="e#6#120#0#PHP" expanded="true" />
-            <marker date="1541183489081" expanded="true" signature="363:440" ph="select * fro... productos" />
-            <marker date="1541183489081" expanded="true" signature="882:963" ph="select * fro... productos" />
-            <marker date="1541183489081" expanded="true" signature="1391:1504" ph="select sum(p... productos" />
+            <marker date="1541185867996" expanded="true" signature="363:440" ph="select * fro... productos" />
+            <marker date="1541185867996" expanded="true" signature="882:963" ph="select * fro... productos" />
+            <marker date="1541185867996" expanded="true" signature="1391:1504" ph="select sum(p... productos" />
           </folding>
         </state>
       </provider>
@@ -739,7 +739,7 @@
         <state relative-caret-position="486">
           <caret line="95" column="26" lean-forward="true" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
           <folding>
-            <marker date="1541185786938" expanded="true" signature="4823:4866" ph="..." />
+            <marker date="1541185868003" expanded="true" signature="4823:4866" ph="..." />
           </folding>
         </state>
       </provider>
