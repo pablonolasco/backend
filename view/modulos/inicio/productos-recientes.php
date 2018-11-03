@@ -1,3 +1,7 @@
+<?php
+$productos=ProductoController::get_productos_fecha();
+
+?>
 <!--=====================================
 PRODUCTOS RECIENTES
 ======================================-->
@@ -25,57 +29,64 @@ PRODUCTOS RECIENTES
 
         <!-- products-list -->
         <ul class="products-list product-list-in-box">
+            <?php
+                for($i=0; $i<4; $i++) {
+                    if($productos[$i]["portada"] !="") {
+                        ?>
+                        <li class="item">
+                            <div class="product-img">
+                                <img src="<?php echo $productos[$i]["portada"]; ?>" alt="Product Image">
+                            </div>
+                            <div class="product-info">
+                                <a href="#" class="product-title">
+                                    <?php echo $productos[$i]["titulo"]; ?>
+                                    <span class="label label-warning pull-right">
+                                        <?php
+                                        if($productos[$i]["precio"] == 0) {
+                                            echo "Gratis";
+                                            }else{
+                                            echo "$".$productos[$i]["precio"]." MXN";
+                                        }
+                                        ?>
 
-            <li class="item">
-                <div class="product-img">
-                    <img src="view/dist/img/default-50x50.gif" alt="Product Image">
-                </div>
-                <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Samsung TV
-                        <span class="label label-warning pull-right">$1800</span></a>
-                    <span class="product-description">
-	                Samsung 32" 1080p 60Hz LED Smart HDTV.
-	              </span>
-                </div>
-            </li>
+                                    </span></a>
+                                <span class="product-description">
 
-            <li class="item">
-                <div class="product-img">
-                    <img src="view/dist/img/default-50x50.gif" alt="Product Image">
-                </div>
-                <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Bicycle
-                        <span class="label label-info pull-right">$700</span></a>
-                    <span class="product-description">
-	                26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-	              </span>
-                </div>
-            </li>
+                                <?php echo $productos[$i]["titulo"]; ?>
+	                            </span>
+                            </div>
+                        </li>
+                        <?php
+                    }else{
 
-            <li class="item">
-                <div class="product-img">
-                    <img src="view/dist/img/default-50x50.gif" alt="Product Image">
-                </div>
-                <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
-                    <span class="product-description">
-	                Xbox One Console Bundle with Halo Master Chief Collection.
-	              </span>
-                </div>
-            </li>
+                        ?>
+                        <li class="item">
+                            <div class="product-img">
+                                <img src="view/dist/img/default-50x50.gif" alt="Product Image">
+                            </div>
+                            <div class="product-info">
+                                <a href="#" class="product-title">
+                                    <?php echo $productos[$i]["titulo"]; ?>
+                                    <span class="label label-warning pull-right">$<?php
 
-            <li class="item">
-                <div class="product-img">
-                    <img src="view/dist/img/default-50x50.gif" alt="Product Image">
-                </div>
-                <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">PlayStation 4
-                        <span class="label label-success pull-right">$399</span></a>
-                    <span class="product-description">
-	                PlayStation 4 500GB Console (PS4)
+                                        if($productos[$i]["precio"] == 0) {
+                                            echo "Gratis";
+                                        }else{
+                                            echo "$".$productos[$i]["precio"]." MXN";
+                                        }
+                                         ?> MXN</span></a>
+                                <span class="product-description">
+
+                                <?php echo
+
+                                $productos[$i]["titulo"]; ?>
 	              </span>
-                </div>
-            </li>
+                            </div>
+                        </li>
+                    <?php
+                    }
+                }
+            ?>
 
         </ul>
         <!-- products-list -->

@@ -45,4 +45,20 @@ class ProductoController
 
     }
 
+    /*
+    * TODO Metodo que regresa todos los productos ordenados por
+    * fecha
+    */
+    public function get_productos_fecha()
+    {
+        try{
+            $response=ProductoModel::obtener_productos_fecha();
+        }catch (Exception $e){
+            return $e->getMessage();
+        }
+        return $response;
+
+    }
+
+
 }

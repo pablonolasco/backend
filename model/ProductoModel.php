@@ -56,4 +56,20 @@ class ProductoModel
         }
     }
 
+    /*
+    * TODO Metodo que obtiene la suma de todos los productos ordenados por fechas
+    */
+    public static function obtener_productos_fecha()
+    {
+        try{
+            $stmt=Conexion::conectar()->prepare("select * from productos where productos.`status`=1 order by productos.fecha desc;");
+            $stmt->execute();
+            return $stmt->fetchAll();
+            $stmt->close();
+            $stmt=null;
+        }catch (Exception $e){
+            return $e->getMessage();
+        }
+    }
+
 }

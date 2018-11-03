@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="393bfc25-f145-448a-9d68-88f211794252" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/RutaModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/UsuarioController.php" afterPath="$PROJECT_DIR$/controller/UsuarioController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/UsuarioModel.php" afterPath="$PROJECT_DIR$/model/UsuarioModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/modulos/inicio/ultimos-usuarios.php" afterPath="$PROJECT_DIR$/view/modulos/inicio/ultimos-usuarios.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ProductoController.php" afterPath="$PROJECT_DIR$/controller/ProductoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/ProductoModel.php" afterPath="$PROJECT_DIR$/model/ProductoModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/modulos/inicio/productos-recientes.php" afterPath="$PROJECT_DIR$/view/modulos/inicio/productos-recientes.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +15,46 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="productos-recientes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/modulos/inicio/productos-recientes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+              <folding>
+                <marker date="1541206445387" expanded="true" signature="3529:3616" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductoController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/ProductoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductoModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/ProductoModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+              <folding>
+                <element signature="e#6#120#0#PHP" expanded="true" />
+                <marker date="1541203858599" expanded="true" signature="363:440" ph="select * fro... productos" />
+                <marker date="1541203858599" expanded="true" signature="882:963" ph="select * fro... productos" />
+                <marker date="1541203858599" expanded="true" signature="1391:1504" ph="select sum(p... productos" />
+                <marker date="1541203858599" expanded="true" signature="1928:2008" ph="select * fro... productos" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -33,7 +69,6 @@
       <list>
         <option value="$PROJECT_DIR$/controller/AdministradorController.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio.php" />
-        <option value="$PROJECT_DIR$/view/modulos/inicio/productos-recientes.php" />
         <option value="$PROJECT_DIR$/view/modulos/reporte.php" />
         <option value="$PROJECT_DIR$/view/modulos/usuario.php" />
         <option value="$PROJECT_DIR$/view/modulos/venta.php" />
@@ -64,14 +99,15 @@
         <option value="$PROJECT_DIR$/model/VisitaModel.php" />
         <option value="$PROJECT_DIR$/controller/VisitaController.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio/grafico-visitas.php" />
-        <option value="$PROJECT_DIR$/controller/ProductoController.php" />
-        <option value="$PROJECT_DIR$/model/ProductoModel.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio/productos-mas-vendidos.php" />
         <option value="$PROJECT_DIR$/model/UsuarioModel.php" />
         <option value="$PROJECT_DIR$/controller/UsuarioController.php" />
         <option value="$PROJECT_DIR$/model/RutaModel.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/view/modulos/inicio/ultimos-usuarios.php" />
+        <option value="$PROJECT_DIR$/controller/ProductoController.php" />
+        <option value="$PROJECT_DIR$/model/ProductoModel.php" />
+        <option value="$PROJECT_DIR$/view/modulos/inicio/productos-recientes.php" />
       </list>
     </option>
   </component>
@@ -158,7 +194,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modulos" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inicio" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,17 +330,18 @@
       <workItem from="1540920289342" duration="26895000" />
       <workItem from="1541096987493" duration="2695000" />
       <workItem from="1541100336662" duration="2123000" />
-      <workItem from="1541123598594" duration="16377000" />
+      <workItem from="1541123598594" duration="20650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93037000" />
+    <option name="totallyTimeSpent" value="97310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2503671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2503671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -343,7 +388,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -387,14 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/modulos/inicio/productos-recientes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,37 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/ProductoModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#120#0#PHP" expanded="true" />
-            <marker date="1541185867996" expanded="true" signature="363:440" ph="select * fro... productos" />
-            <marker date="1541185867996" expanded="true" signature="882:963" ph="select * fro... productos" />
-            <marker date="1541185867996" expanded="true" signature="1391:1504" ph="select sum(p... productos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ProductoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/modulos/inicio/productos-mas-vendidos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="95" column="26" lean-forward="true" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-          <folding>
-            <marker date="1541185868003" expanded="true" signature="4823:4866" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/VentaController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -718,8 +726,8 @@
           <caret line="7" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#6#120#0#PHP" expanded="true" />
-            <marker date="1541192080277" expanded="true" signature="370:444" ph="select * fro... usuarios" />
-            <marker date="1541192080277" expanded="true" signature="935:1012" ph="select * fro... usuarios" />
+            <marker date="1541201985758" expanded="true" signature="370:444" ph="select * fro... usuarios" />
+            <marker date="1541201985758" expanded="true" signature="935:1012" ph="select * fro... usuarios" />
           </folding>
         </state>
       </provider>
@@ -758,6 +766,48 @@
             <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/modulos/inicio/productos-mas-vendidos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <marker date="1541185868003" expanded="true" signature="4823:4866" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ProductoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ProductoModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#120#0#PHP" expanded="true" />
+            <marker date="1541203858599" expanded="true" signature="363:440" ph="select * fro... productos" />
+            <marker date="1541203858599" expanded="true" signature="882:963" ph="select * fro... productos" />
+            <marker date="1541203858599" expanded="true" signature="1391:1504" ph="select sum(p... productos" />
+            <marker date="1541203858599" expanded="true" signature="1928:2008" ph="select * fro... productos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/modulos/inicio/productos-recientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <marker date="1541206445387" expanded="true" signature="3529:3616" ph="..." />
           </folding>
         </state>
       </provider>
