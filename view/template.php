@@ -1,3 +1,7 @@
+<?php
+
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,10 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tienda Online | Panel de Control</title>
 
-    <link rel="icon" href="../view/img/plantilla/icono.png">
+    <link rel="icon" href="view/img/plantilla/icono.png">
 
-    <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!--=====================================
+    PLUGINS DE CSS
+    ======================================-->
+
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="view/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -25,6 +33,11 @@
     <!-- jvectormap -->
     <link rel="stylesheet" href="view/bower_components/jvectormap/jquery-jvectormap.css">
 
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="view/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="view/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,11 +49,23 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
-    <!-- REQUIRED JS SCRIPTS -->
+    <!--=====================================
+     CSS PERSONALIZADO
+     ======================================-->
+    <!-- Plantilla personalizada-->
+    <link rel="stylesheet" href="../view/css/plantilla.css">
+    <link rel="stylesheet" href="../view/css/slide.css">
 
+    <!--=====================================
+     PLUGINS DE JAVASCRIPT
+     ======================================-->
     <!-- jQuery 3 -->
     <script src="view/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
+
+    <!-- jQuery UI 1.11.4 -->
+    <script src="view/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
     <script src="view/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
     <script src="view/dist/js/adminlte.min.js"></script>
@@ -56,28 +81,19 @@
     <script src="view/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <!-- ChartJS -->
     <script src="view/bower_components/Chart.js/Chart.js"></script>
+    <script src="view/plugins/sweetalert2/sweetalert2.all.js"></script>
 
-    <script>
-        $(function () {
-            $('input').iCheck({
-                checkboxClass: 'icheckbox_square-blue',
-                radioClass: 'iradio_square-blue',
-                increaseArea: '20%' // optional
-            });
-            /* jQueryKnob */
-            $('.knob').knob();
-            /* SideBar Menu */
-            $('.sidebar-menu').tree();
-        });
-    </script>
+    <!-- bootstrap datetimepicker http://bootstrap-datepicker.readthedocs.io-->
+    <script src="view/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- bootstrap color picker https://farbelous.github.io/bootstrap-colorpicker/v2/-->
+    <script src="view/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
 
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini login-page">
+<body class="hold-transition sidebar-collapse skin-blue sidebar-mini login-page">
 
 <?php
 
-session_start();
 
 if(isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"] === "ok"){
     $url=$_GET['ruta'];
@@ -103,6 +119,8 @@ if(isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"]
 
        if($ruta == "inicio" ||
            $ruta == "reporte" ||
+           $ruta == "comercio" ||
+           $ruta == "slide" ||
            $ruta == "categorias" ||
            $ruta == "subcategorias" ||
            $ruta == "productos" ||
@@ -139,7 +157,11 @@ if(isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"]
 
 ?>
 
-
-
+<!--=====================================
+JS PERSONALIZADO
+======================================-->
+<script src="view/js/template.js"></script>
+<script src="view/js/gestorComercio.js"></script>
+<script src="view/js/gestorSlide.js"></script>
 </body>
 </html>

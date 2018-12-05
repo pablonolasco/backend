@@ -10,6 +10,8 @@ require_once "controller/ProductoController.php";
 require_once "controller/UsuarioController.php";
 require_once "controller/ReporteController.php";
 require_once "controller/VisitaController.php";
+require_once "controller/ComercioController.php";
+require_once "controller/SlideController.php";
 
 require_once "model/AdministradorModel.php";
 require_once "model/VentaModel.php";
@@ -22,6 +24,8 @@ require_once "model/ReporteModel.php";
 require_once "model/PerfilModel.php";
 require_once "model/VisitaModel.php";
 require_once "model/RutaModel.php";
+require_once "model/ComercioModel.php";
+require_once "model/SlideModel.php";
 
 $plantilla=new ControllerTemplate();
 $plantilla->plantilla();

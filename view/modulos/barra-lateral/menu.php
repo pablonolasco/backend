@@ -8,6 +8,10 @@ MENU
 
     <li><a href="reporte"><i class="fa fa-files-o"></i> <span>Gestor Reporte</span></a></li>
 
+    <li><a href="comercio"><i class="fa-credit-card"></i> <span>Gestor Comercio</span></a></li>
+
+    <li><a href="slide"><i class="fa fa-edit"></i> <span>Gestor Slide</span></a></li>
+
     <li class="treeview">
 
         <a href="#">

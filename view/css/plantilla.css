@@ -1,0 +1,87 @@
+/*=============================================
+REDES SOCIALES
+=============================================*/
+
+/*
+?RED SOCIAL
+
+*/
+.red-social{
+	line-height: 30px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+}
+
+/*
+?FACEBOOK
+*/
+.facebook-blanco{
+	color: white;
+	background: black;
+}
+.facebook-negro{
+	color:black;
+}
+.facebook-color{
+	color: white;
+	background: #46639f;
+}
+
+/*
+?YOUTUBE
+*/
+.youtube-blanco{
+	color: white;
+	background: black;
+}
+.youtube-negro{
+	color:black;
+}
+.youtube-color{
+	color: white;
+	background: #d6513e;
+}
+
+/*
+?TWITTER
+*/
+.twitter-blanco{
+	color: white;
+	background: black;
+}
+.twitter-negro{
+	color:black;
+}
+.twitter-color{
+	color: white;
+	background: #0ab2e6;
+}
+/*
+?INSTAGRAM
+*/
+.instagram-blanco{
+	color: white;
+	background: black;
+}
+.instagram-negro{
+	color:black;
+}
+.instagram-color{
+	color: white;
+	background: linear-gradient(45deg,#fca925,#ee1d5f,#6350a2);
+}
+/*
+?GOOGLE PLUS
+*/
+.google-blanco{
+	color: white;
+	background: black;
+}
+.google-negro{
+	color:black;
+}
+.google-color{
+	color: white;
+	background: #d71617;
+}
