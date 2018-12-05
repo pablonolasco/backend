@@ -9154,7 +9154,7 @@ function isSlotSegCollision(seg1, seg2) {
 
 ;;
 
-/* An abstract class from which other view inherit from
+/* An abstract class from which other views inherit from
 ----------------------------------------------------------------------------------------------------------------------*/
 
 var View = FC.View = Model.extend({
@@ -9314,7 +9314,7 @@ var View = FC.View = Model.extend({
 	computeTitle: function() {
 		var range;
 
-		// for view that span a large unit of time, show the proper interval, ignoring stray days before and after
+		// for views that span a large unit of time, show the proper interval, ignoring stray days before and after
 		if (/^(year|month)$/.test(this.currentRangeUnit)) {
 			range = this.currentRange;
 		}
@@ -11637,7 +11637,7 @@ Calendar.mixin({
 		this.renderHeader();
 		this.renderFooter();
 
-		// even non-current view will be affected by this option change. do before rerender
+		// even non-current views will be affected by this option change. do before rerender
 		// TODO: detangle
 		this.viewsByType = {};
 
@@ -11907,7 +11907,7 @@ Calendar.mixin({
 
 
 	// Given a duration singular unit, like "week" or "day", finds a matching view spec.
-	// Preference is given to view that have corresponding buttons.
+	// Preference is given to views that have corresponding buttons.
 	getUnitViewSpec: function(unit) {
 		var viewTypes;
 		var i;
@@ -11915,9 +11915,9 @@ Calendar.mixin({
 
 		if ($.inArray(unit, unitsDesc) != -1) {
 
-			// put view that have buttons first. there will be duplicates, but oh well
+			// put views that have buttons first. there will be duplicates, but oh well
 			viewTypes = this.header.getViewsWithButtons(); // TODO: include footer as well?
-			$.each(FC.views, function(viewType) { // all view
+			$.each(FC.views, function(viewType) { // all views
 				viewTypes.push(viewType);
 			});
 
@@ -14193,7 +14193,7 @@ Calendar.prototype.expandBusinessHourEvents = function(wholeDay, inputs, ignoreN
 
 ;;
 
-/* An abstract class for the "basic" view, as well as month view. Renders one or more rows of day cells.
+/* An abstract class for the "basic" views, as well as month view. Renders one or more rows of day cells.
 ----------------------------------------------------------------------------------------------------------------------*/
 // It is a manager for a DayGrid subcomponent, which does most of the heavy lifting.
 // It is responsible for managing width/height.
@@ -14239,7 +14239,7 @@ var BasicView = FC.BasicView = View.extend({
 	buildRenderRange: function(currentRange, currentRangeUnit) {
 		var renderRange = View.prototype.buildRenderRange.apply(this, arguments);
 
-		// year and month view should be aligned with weeks. this is already done for week
+		// year and month views should be aligned with weeks. this is already done for week
 		if (/^(year|month)$/.test(currentRangeUnit)) {
 			renderRange.start.startOf('week');
 
@@ -14686,7 +14686,7 @@ fcViews.month = {
 };
 ;;
 
-/* An abstract class for all agenda-related view. Displays one more columns with time slots running vertically.
+/* An abstract class for all agenda-related views. Displays one more columns with time slots running vertically.
 ----------------------------------------------------------------------------------------------------------------------*/
 // Is a manager for the TimeGrid subcomponent and possibly the DayGrid subcomponent (if allDaySlot is on).
 // Responsible for managing width/height.

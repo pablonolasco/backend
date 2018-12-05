@@ -239,7 +239,7 @@ test('picker should render fine when `$.fn.show` and `$.fn.hide` are overridden'
     }
 }));
 
-test('Focused ceil for decade/century/millenium view', function(){
+test('Focused ceil for decade/century/millenium views', function(){
     var input = $('<input />')
       .appendTo('#qunit-fixture')
       .datepicker({

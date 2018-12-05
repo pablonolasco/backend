@@ -4,7 +4,7 @@
 // highlight sections and secondary sections of docs content`.
 
 .s2-docs-sidebar {
-  // By default it is not affixed in mobile view, so undo that
+  // By default it is not affixed in mobile views, so undo that
   &.affix {
     position: static;
   }

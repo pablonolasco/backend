@@ -1626,7 +1626,7 @@ test('Nav arrow html templates .prev click', function () {
     equal(target.text(), '2011');
 });
 
-test('Visibility of the prev and next arrows for decade/century/millenium view with startDate and endDate', function(){
+test('Visibility of the prev and next arrows for decade/century/millenium views with startDate and endDate', function(){
     var input = $('<input />')
                 .appendTo('#qunit-fixture')
                 .val('01/01/2015')
